@@ -1,0 +1,18 @@
+PODS:
+  - iCarousel (1.8.3)
+  - XCDYouTubeKit (2.5.4)
+  - youtube-ios-player-helper (0.1.6)
+
+DEPENDENCIES:
+  - iCarousel
+  - XCDYouTubeKit
+  - youtube-ios-player-helper (~> 0.1.4)
+
+SPEC CHECKSUMS:
+  iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
+  XCDYouTubeKit: 80eb3978dae220a0116d198bca6852c6c969fa66
+  youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
+
+PODFILE CHECKSUM: 98d156bca76bfe7aebdf34a56b39b14d8012740c
+
+COCOAPODS: 1.2.0

@@ -1,0 +1,921 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		786D4ECE1D0AD4DC00FB2ABF /* IEFACommitteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 786D4ECD1D0AD4DC00FB2ABF /* IEFACommitteViewController.m */; };
+		786D4ED11D0C167200FB2ABF /* IEFACommitteDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 786D4ED01D0C167200FB2ABF /* IEFACommitteDB.m */; };
+		786D4ED41D0F110F00FB2ABF /* IEFAHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 786D4ED31D0F110F00FB2ABF /* IEFAHomeViewController.m */; };
+		786D4ED71D116CD900FB2ABF /* IEFATopicOverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 786D4ED61D116CD900FB2ABF /* IEFATopicOverviewViewController.m */; };
+		786D4EE21D17EA1D00FB2ABF /* IEFAMediaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 786D4EE11D17EA1D00FB2ABF /* IEFAMediaTableViewController.m */; };
+		786D4EE51D17ECE400FB2ABF /* IEFAMediaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 786D4EE41D17ECE400FB2ABF /* IEFAMediaTableViewCell.m */; };
+		78721F061D2428F7009CC57E /* buttonWithCornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 78721F051D2428F7009CC57E /* buttonWithCornerRadius.m */; };
+		78D44C4C1D05838000E14A7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D44C4B1D05838000E14A7B /* main.m */; };
+		78D44C4F1D05838000E14A7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D44C4E1D05838000E14A7B /* AppDelegate.m */; };
+		78D44C581D05838000E14A7B /* iefa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 78D44C561D05838000E14A7B /* iefa.xcdatamodeld */; };
+		78D44C5A1D05838000E14A7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78D44C591D05838000E14A7B /* Assets.xcassets */; };
+		78D44C5D1D05838000E14A7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78D44C5B1D05838000E14A7B /* LaunchScreen.storyboard */; };
+		78D44C661D05EE1B00E14A7B /* IEFACommitteesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D44C651D05EE1B00E14A7B /* IEFACommitteesCollectionViewController.m */; };
+		78D44C6C1D06CC2B00E14A7B /* IEFACommitteeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D44C6B1D06CC2B00E14A7B /* IEFACommitteeCollectionViewCell.m */; };
+		A049F8321D245A9700A8F249 /* IEFAAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A049F8311D245A9700A8F249 /* IEFAAboutViewController.m */; };
+		A049F8351D2468F100A8F249 /* IEFASponsorsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A049F8341D2468F100A8F249 /* IEFASponsorsTableViewController.m */; };
+		A056DF871D251B3400053800 /* IEFAContactsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A056DF861D251B3400053800 /* IEFAContactsHeaderView.m */; };
+		A056DF891D251BC800053800 /* IEFAContactsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A056DF881D251BC800053800 /* IEFAContactsHeaderView.xib */; };
+		A0877BEF1D22FFA60035C3D8 /* IEFAContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0877BEE1D22FFA60035C3D8 /* IEFAContactsTableViewController.m */; };
+		A09F9DFA1D16D89400202086 /* RZTransitionsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09F9DCA1D16D89400202086 /* RZTransitionsNavigationController.m */; };
+		A09F9DFB1D16D89400202086 /* RZUniqueTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A09F9DCE1D16D89400202086 /* RZUniqueTransition.m */; };
+		A09F9DFC1D16D89400202086 /* RZBaseSwipeInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09F9DD11D16D89400202086 /* RZBaseSwipeInteractionController.m */; };
+		A09F9DFD1D16D89400202086 /* RZHorizontalInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09F9DD31D16D89400202086 /* RZHorizontalInteractionController.m */; };
+		A09F9DFE1D16D89400202086 /* RZOverscrollInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09F9DD51D16D89400202086 /* RZOverscrollInteractionController.m */; };
+		A09F9DFF1D16D89400202086 /* RZPinchInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09F9DD71D16D89400202086 /* RZPinchInteractionController.m */; };
+		A09F9E001D16D89400202086 /* RZVerticalSwipeInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09F9DDB1D16D89400202086 /* RZVerticalSwipeInteractionController.m */; };
+		A09F9E011D16D89400202086 /* RZTransitionsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A09F9DDE1D16D89400202086 /* RZTransitionsManager.m */; };
+		A09F9E021D16D89400202086 /* RZCardSlideAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09F9DE31D16D89400202086 /* RZCardSlideAnimationController.m */; };
+		A09F9E031D16D89400202086 /* RZCirclePushAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09F9DE51D16D89400202086 /* RZCirclePushAnimationController.m */; };
+		A09F9E041D16D89400202086 /* RZRectZoomAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09F9DE71D16D89400202086 /* RZRectZoomAnimationController.m */; };
+		A09F9E051D16D89400202086 /* RZSegmentControlMoveFadeAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09F9DE91D16D89400202086 /* RZSegmentControlMoveFadeAnimationController.m */; };
+		A09F9E061D16D89400202086 /* RZShrinkZoomAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09F9DEB1D16D89400202086 /* RZShrinkZoomAnimationController.m */; };
+		A09F9E071D16D89400202086 /* RZZoomAlphaAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09F9DEE1D16D89400202086 /* RZZoomAlphaAnimationController.m */; };
+		A09F9E081D16D89400202086 /* RZZoomBlurAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09F9DF01D16D89400202086 /* RZZoomBlurAnimationController.m */; };
+		A09F9E091D16D89400202086 /* RZZoomPushAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09F9DF21D16D89400202086 /* RZZoomPushAnimationController.m */; };
+		A09F9E0A1D16D89400202086 /* NSObject+RZTransitionsViewHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = A09F9DF51D16D89400202086 /* NSObject+RZTransitionsViewHelpers.m */; };
+		A09F9E0B1D16D89400202086 /* UIImage+RZTransitionsFastImageBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = A09F9DF71D16D89400202086 /* UIImage+RZTransitionsFastImageBlur.m */; };
+		A09F9E0C1D16D89400202086 /* UIImage+RZTransitionsSnapshotHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = A09F9DF91D16D89400202086 /* UIImage+RZTransitionsSnapshotHelpers.m */; };
+		A0FEF1C91D08ACFB00710597 /* IEFADictionaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FEF1C81D08ACFB00710597 /* IEFADictionaryViewController.m */; };
+		A3324F201EE48C5500B0E361 /* IEFACommViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3324F1F1EE48C5500B0E361 /* IEFACommViewController.m */; };
+		A37B74781EE6A86B00C13735 /* IEFAMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A37B74771EE6A86B00C13735 /* IEFAMoreViewController.m */; };
+		A37B747B1EE6AFE100C13735 /* IEFAMediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A37B747A1EE6AFE100C13735 /* IEFAMediaViewController.m */; };
+		A3A401001EE68EC0001963B1 /* IEFACommitteeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A400FF1EE68EC0001963B1 /* IEFACommitteeTableViewCell.m */; };
+		C97A00735850A3260A781784 /* libPods-iefa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E691F9D1E8402F25B371D54D /* libPods-iefa.a */; };
+		CE01F77E1D0721CB00C61C6E /* IEFAMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE01F77D1D0721CB00C61C6E /* IEFAMainViewController.m */; };
+		CE01F7811D0727E700C61C6E /* IEFADailyScheduleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE01F7801D0727E700C61C6E /* IEFADailyScheduleTableViewCell.m */; };
+		CE01F7871D072DBE00C61C6E /* IEFAScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE01F7861D072DBE00C61C6E /* IEFAScheduleViewController.m */; };
+		CE2B1C261D0C45FE006ED92E /* IEFAEvantDayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2B1C251D0C45FE006ED92E /* IEFAEvantDayViewController.m */; };
+		CE2B1C281D0C91BC006ED92E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2B1C271D0C91BC006ED92E /* MapKit.framework */; };
+		CE35D4DE1D1572C900C742EF /* IEFADropBoxAccessTokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35D4DD1D1572C900C742EF /* IEFADropBoxAccessTokenManager.m */; };
+		CE35D4E11D1594CE00C742EF /* dictionary.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CE35D4E01D1594CE00C742EF /* dictionary.pdf */; };
+		CE35D4ED1D15A59400C742EF /* IEFAEvantsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35D4EC1D15A59400C742EF /* IEFAEvantsViewController.m */; };
+		CE4387291D1FE9140006790F /* IEFAYoutubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4387281D1FE9140006790F /* IEFAYoutubeViewController.m */; };
+		CE43872C1D1FED240006790F /* IEFAMediaVideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE43872B1D1FED240006790F /* IEFAMediaVideoTableViewCell.m */; };
+		CE6D43BA1D2441330001EB51 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6D43B91D2441330001EB51 /* Reachability.m */; };
+		CE70A8661D075A5200BA6740 /* IEFASchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = CE70A8651D075A5200BA6740 /* IEFASchedule.m */; };
+		CEBC33691D1A82460048E695 /* IEFAMediaActivityIndicatorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC33681D1A82460048E695 /* IEFAMediaActivityIndicatorTableViewCell.m */; };
+		CEC014BD1D13D42300B8DB52 /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC014BC1D13D42300B8DB52 /* DropboxSDK.framework */; };
+		CEC014BF1D13D43700B8DB52 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC014BE1D13D43700B8DB52 /* Security.framework */; };
+		CEC014C11D13D43E00B8DB52 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC014C01D13D43E00B8DB52 /* QuartzCore.framework */; };
+		CEC014C41D13DC1800B8DB52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC014C21D13DC1800B8DB52 /* Main.storyboard */; };
+		CEDCBE8C1D11BE8F00440662 /* IEFAScheduleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDCBE8B1D11BE8F00440662 /* IEFAScheduleTableViewCell.m */; };
+		CEDCBE8F1D12BE0600440662 /* IEFARandomFactDB.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDCBE8E1D12BE0600440662 /* IEFARandomFactDB.m */; };
+		CEDCBE941D12CD6500440662 /* IEFAWeatherAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDCBE931D12CD6500440662 /* IEFAWeatherAPIManager.m */; };
+		CEFCF3E21D074CEC0023D9BE /* IEFADailyScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCF3E11D074CEC0023D9BE /* IEFADailyScheduleViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		19CB8B463A358837D0912411 /* Pods-iefa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iefa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iefa/Pods-iefa.debug.xcconfig"; sourceTree = "<group>"; };
+		786D4ECC1D0AD4DC00FB2ABF /* IEFACommitteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFACommitteViewController.h; sourceTree = "<group>"; };
+		786D4ECD1D0AD4DC00FB2ABF /* IEFACommitteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFACommitteViewController.m; sourceTree = "<group>"; };
+		786D4ECF1D0C167200FB2ABF /* IEFACommitteDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFACommitteDB.h; sourceTree = "<group>"; };
+		786D4ED01D0C167200FB2ABF /* IEFACommitteDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFACommitteDB.m; sourceTree = "<group>"; };
+		786D4ED21D0F110F00FB2ABF /* IEFAHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFAHomeViewController.h; sourceTree = "<group>"; };
+		786D4ED31D0F110F00FB2ABF /* IEFAHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFAHomeViewController.m; sourceTree = "<group>"; };
+		786D4ED51D116CD900FB2ABF /* IEFATopicOverviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFATopicOverviewViewController.h; sourceTree = "<group>"; };
+		786D4ED61D116CD900FB2ABF /* IEFATopicOverviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFATopicOverviewViewController.m; sourceTree = "<group>"; };
+		786D4EE01D17EA1D00FB2ABF /* IEFAMediaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFAMediaTableViewController.h; sourceTree = "<group>"; };
+		786D4EE11D17EA1D00FB2ABF /* IEFAMediaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFAMediaTableViewController.m; sourceTree = "<group>"; };
+		786D4EE31D17ECE400FB2ABF /* IEFAMediaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFAMediaTableViewCell.h; sourceTree = "<group>"; };
+		786D4EE41D17ECE400FB2ABF /* IEFAMediaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFAMediaTableViewCell.m; sourceTree = "<group>"; };
+		78721F041D2428F7009CC57E /* buttonWithCornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buttonWithCornerRadius.h; sourceTree = "<group>"; };
+		78721F051D2428F7009CC57E /* buttonWithCornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = buttonWithCornerRadius.m; sourceTree = "<group>"; };
+		78D44C471D05838000E14A7B /* iefa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iefa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78D44C4B1D05838000E14A7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		78D44C4D1D05838000E14A7B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		78D44C4E1D05838000E14A7B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		78D44C571D05838000E14A7B /* iefa.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iefa.xcdatamodel; sourceTree = "<group>"; };
+		78D44C591D05838000E14A7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78D44C5C1D05838000E14A7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		78D44C5E1D05838000E14A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78D44C641D05EE1B00E14A7B /* IEFACommitteesCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFACommitteesCollectionViewController.h; sourceTree = "<group>"; };
+		78D44C651D05EE1B00E14A7B /* IEFACommitteesCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFACommitteesCollectionViewController.m; sourceTree = "<group>"; };
+		78D44C691D05F16300E14A7B /* IEFAConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IEFAConstants.h; sourceTree = "<group>"; };
+		78D44C6A1D06CC2B00E14A7B /* IEFACommitteeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFACommitteeCollectionViewCell.h; sourceTree = "<group>"; };
+		78D44C6B1D06CC2B00E14A7B /* IEFACommitteeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFACommitteeCollectionViewCell.m; sourceTree = "<group>"; };
+		A049F8301D245A9700A8F249 /* IEFAAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFAAboutViewController.h; sourceTree = "<group>"; };
+		A049F8311D245A9700A8F249 /* IEFAAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFAAboutViewController.m; sourceTree = "<group>"; };
+		A049F8331D2468F100A8F249 /* IEFASponsorsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFASponsorsTableViewController.h; sourceTree = "<group>"; };
+		A049F8341D2468F100A8F249 /* IEFASponsorsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFASponsorsTableViewController.m; sourceTree = "<group>"; };
+		A056DF851D251B3400053800 /* IEFAContactsHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFAContactsHeaderView.h; sourceTree = "<group>"; };
+		A056DF861D251B3400053800 /* IEFAContactsHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFAContactsHeaderView.m; sourceTree = "<group>"; };
+		A056DF881D251BC800053800 /* IEFAContactsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IEFAContactsHeaderView.xib; sourceTree = "<group>"; };
+		A0877BED1D22FFA60035C3D8 /* IEFAContactsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFAContactsTableViewController.h; sourceTree = "<group>"; };
+		A0877BEE1D22FFA60035C3D8 /* IEFAContactsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFAContactsTableViewController.m; sourceTree = "<group>"; };
+		A09F9DC91D16D89400202086 /* RZTransitionsNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZTransitionsNavigationController.h; sourceTree = "<group>"; };
+		A09F9DCA1D16D89400202086 /* RZTransitionsNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZTransitionsNavigationController.m; sourceTree = "<group>"; };
+		A09F9DCC1D16D89400202086 /* RZTransitionAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZTransitionAction.h; sourceTree = "<group>"; };
+		A09F9DCD1D16D89400202086 /* RZUniqueTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZUniqueTransition.h; sourceTree = "<group>"; };
+		A09F9DCE1D16D89400202086 /* RZUniqueTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZUniqueTransition.m; sourceTree = "<group>"; };
+		A09F9DD01D16D89400202086 /* RZBaseSwipeInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZBaseSwipeInteractionController.h; sourceTree = "<group>"; };
+		A09F9DD11D16D89400202086 /* RZBaseSwipeInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZBaseSwipeInteractionController.m; sourceTree = "<group>"; };
+		A09F9DD21D16D89400202086 /* RZHorizontalInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZHorizontalInteractionController.h; sourceTree = "<group>"; };
+		A09F9DD31D16D89400202086 /* RZHorizontalInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZHorizontalInteractionController.m; sourceTree = "<group>"; };
+		A09F9DD41D16D89400202086 /* RZOverscrollInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZOverscrollInteractionController.h; sourceTree = "<group>"; };
+		A09F9DD51D16D89400202086 /* RZOverscrollInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZOverscrollInteractionController.m; sourceTree = "<group>"; };
+		A09F9DD61D16D89400202086 /* RZPinchInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZPinchInteractionController.h; sourceTree = "<group>"; };
+		A09F9DD71D16D89400202086 /* RZPinchInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZPinchInteractionController.m; sourceTree = "<group>"; };
+		A09F9DD81D16D89400202086 /* RZTransitionInteractionControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZTransitionInteractionControllerProtocol.h; sourceTree = "<group>"; };
+		A09F9DD91D16D89400202086 /* RZTransitionsInteractionControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZTransitionsInteractionControllers.h; sourceTree = "<group>"; };
+		A09F9DDA1D16D89400202086 /* RZVerticalSwipeInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZVerticalSwipeInteractionController.h; sourceTree = "<group>"; };
+		A09F9DDB1D16D89400202086 /* RZVerticalSwipeInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZVerticalSwipeInteractionController.m; sourceTree = "<group>"; };
+		A09F9DDD1D16D89400202086 /* RZTransitionsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZTransitionsManager.h; sourceTree = "<group>"; };
+		A09F9DDE1D16D89400202086 /* RZTransitionsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZTransitionsManager.m; sourceTree = "<group>"; };
+		A09F9DDF1D16D89400202086 /* RZTransitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZTransitions.h; sourceTree = "<group>"; };
+		A09F9DE11D16D89400202086 /* RZAnimationControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZAnimationControllerProtocol.h; sourceTree = "<group>"; };
+		A09F9DE21D16D89400202086 /* RZCardSlideAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZCardSlideAnimationController.h; sourceTree = "<group>"; };
+		A09F9DE31D16D89400202086 /* RZCardSlideAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZCardSlideAnimationController.m; sourceTree = "<group>"; };
+		A09F9DE41D16D89400202086 /* RZCirclePushAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZCirclePushAnimationController.h; sourceTree = "<group>"; };
+		A09F9DE51D16D89400202086 /* RZCirclePushAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZCirclePushAnimationController.m; sourceTree = "<group>"; };
+		A09F9DE61D16D89400202086 /* RZRectZoomAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZRectZoomAnimationController.h; sourceTree = "<group>"; };
+		A09F9DE71D16D89400202086 /* RZRectZoomAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZRectZoomAnimationController.m; sourceTree = "<group>"; };
+		A09F9DE81D16D89400202086 /* RZSegmentControlMoveFadeAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZSegmentControlMoveFadeAnimationController.h; sourceTree = "<group>"; };
+		A09F9DE91D16D89400202086 /* RZSegmentControlMoveFadeAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZSegmentControlMoveFadeAnimationController.m; sourceTree = "<group>"; };
+		A09F9DEA1D16D89400202086 /* RZShrinkZoomAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZShrinkZoomAnimationController.h; sourceTree = "<group>"; };
+		A09F9DEB1D16D89400202086 /* RZShrinkZoomAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZShrinkZoomAnimationController.m; sourceTree = "<group>"; };
+		A09F9DEC1D16D89400202086 /* RZTransitionsAnimationControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZTransitionsAnimationControllers.h; sourceTree = "<group>"; };
+		A09F9DED1D16D89400202086 /* RZZoomAlphaAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZZoomAlphaAnimationController.h; sourceTree = "<group>"; };
+		A09F9DEE1D16D89400202086 /* RZZoomAlphaAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZZoomAlphaAnimationController.m; sourceTree = "<group>"; };
+		A09F9DEF1D16D89400202086 /* RZZoomBlurAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZZoomBlurAnimationController.h; sourceTree = "<group>"; };
+		A09F9DF01D16D89400202086 /* RZZoomBlurAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZZoomBlurAnimationController.m; sourceTree = "<group>"; };
+		A09F9DF11D16D89400202086 /* RZZoomPushAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZZoomPushAnimationController.h; sourceTree = "<group>"; };
+		A09F9DF21D16D89400202086 /* RZZoomPushAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZZoomPushAnimationController.m; sourceTree = "<group>"; };
+		A09F9DF41D16D89400202086 /* NSObject+RZTransitionsViewHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RZTransitionsViewHelpers.h"; sourceTree = "<group>"; };
+		A09F9DF51D16D89400202086 /* NSObject+RZTransitionsViewHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RZTransitionsViewHelpers.m"; sourceTree = "<group>"; };
+		A09F9DF61D16D89400202086 /* UIImage+RZTransitionsFastImageBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RZTransitionsFastImageBlur.h"; sourceTree = "<group>"; };
+		A09F9DF71D16D89400202086 /* UIImage+RZTransitionsFastImageBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RZTransitionsFastImageBlur.m"; sourceTree = "<group>"; };
+		A09F9DF81D16D89400202086 /* UIImage+RZTransitionsSnapshotHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RZTransitionsSnapshotHelpers.h"; sourceTree = "<group>"; };
+		A09F9DF91D16D89400202086 /* UIImage+RZTransitionsSnapshotHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RZTransitionsSnapshotHelpers.m"; sourceTree = "<group>"; };
+		A0FEF1C71D08ACFB00710597 /* IEFADictionaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFADictionaryViewController.h; sourceTree = "<group>"; };
+		A0FEF1C81D08ACFB00710597 /* IEFADictionaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFADictionaryViewController.m; sourceTree = "<group>"; };
+		A3324F1E1EE48C5500B0E361 /* IEFACommViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFACommViewController.h; sourceTree = "<group>"; };
+		A3324F1F1EE48C5500B0E361 /* IEFACommViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFACommViewController.m; sourceTree = "<group>"; };
+		A37B74761EE6A86B00C13735 /* IEFAMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFAMoreViewController.h; sourceTree = "<group>"; };
+		A37B74771EE6A86B00C13735 /* IEFAMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFAMoreViewController.m; sourceTree = "<group>"; };
+		A37B74791EE6AFE100C13735 /* IEFAMediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFAMediaViewController.h; sourceTree = "<group>"; };
+		A37B747A1EE6AFE100C13735 /* IEFAMediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFAMediaViewController.m; sourceTree = "<group>"; };
+		A3A400FE1EE68EC0001963B1 /* IEFACommitteeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFACommitteeTableViewCell.h; sourceTree = "<group>"; };
+		A3A400FF1EE68EC0001963B1 /* IEFACommitteeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFACommitteeTableViewCell.m; sourceTree = "<group>"; };
+		C47E562BCBB891791A36B28E /* Pods-iefa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iefa.release.xcconfig"; path = "Pods/Target Support Files/Pods-iefa/Pods-iefa.release.xcconfig"; sourceTree = "<group>"; };
+		CE01F77C1D0721CB00C61C6E /* IEFAMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFAMainViewController.h; sourceTree = "<group>"; };
+		CE01F77D1D0721CB00C61C6E /* IEFAMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFAMainViewController.m; sourceTree = "<group>"; };
+		CE01F77F1D0727E700C61C6E /* IEFADailyScheduleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFADailyScheduleTableViewCell.h; sourceTree = "<group>"; };
+		CE01F7801D0727E700C61C6E /* IEFADailyScheduleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFADailyScheduleTableViewCell.m; sourceTree = "<group>"; };
+		CE01F7851D072DBE00C61C6E /* IEFAScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFAScheduleViewController.h; sourceTree = "<group>"; };
+		CE01F7861D072DBE00C61C6E /* IEFAScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFAScheduleViewController.m; sourceTree = "<group>"; };
+		CE2B1C241D0C45FE006ED92E /* IEFAEvantDayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFAEvantDayViewController.h; sourceTree = "<group>"; };
+		CE2B1C251D0C45FE006ED92E /* IEFAEvantDayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFAEvantDayViewController.m; sourceTree = "<group>"; };
+		CE2B1C271D0C91BC006ED92E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CE35D4DC1D1572C900C742EF /* IEFADropBoxAccessTokenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFADropBoxAccessTokenManager.h; sourceTree = "<group>"; };
+		CE35D4DD1D1572C900C742EF /* IEFADropBoxAccessTokenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFADropBoxAccessTokenManager.m; sourceTree = "<group>"; };
+		CE35D4E01D1594CE00C742EF /* dictionary.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = dictionary.pdf; sourceTree = "<group>"; };
+		CE35D4EB1D15A59400C742EF /* IEFAEvantsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFAEvantsViewController.h; sourceTree = "<group>"; };
+		CE35D4EC1D15A59400C742EF /* IEFAEvantsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFAEvantsViewController.m; sourceTree = "<group>"; };
+		CE4387271D1FE9140006790F /* IEFAYoutubeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFAYoutubeViewController.h; sourceTree = "<group>"; };
+		CE4387281D1FE9140006790F /* IEFAYoutubeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFAYoutubeViewController.m; sourceTree = "<group>"; };
+		CE43872A1D1FED240006790F /* IEFAMediaVideoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFAMediaVideoTableViewCell.h; sourceTree = "<group>"; };
+		CE43872B1D1FED240006790F /* IEFAMediaVideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFAMediaVideoTableViewCell.m; sourceTree = "<group>"; };
+		CE6D43B81D2441330001EB51 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		CE6D43B91D2441330001EB51 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		CE70A8641D075A5200BA6740 /* IEFASchedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFASchedule.h; sourceTree = "<group>"; };
+		CE70A8651D075A5200BA6740 /* IEFASchedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFASchedule.m; sourceTree = "<group>"; };
+		CEBC33671D1A82460048E695 /* IEFAMediaActivityIndicatorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFAMediaActivityIndicatorTableViewCell.h; sourceTree = "<group>"; };
+		CEBC33681D1A82460048E695 /* IEFAMediaActivityIndicatorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFAMediaActivityIndicatorTableViewCell.m; sourceTree = "<group>"; };
+		CEC014BC1D13D42300B8DB52 /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxSDK.framework; sourceTree = "<group>"; };
+		CEC014BE1D13D43700B8DB52 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CEC014C01D13D43E00B8DB52 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CEC014C31D13DC1800B8DB52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEDCBE8A1D11BE8F00440662 /* IEFAScheduleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFAScheduleTableViewCell.h; sourceTree = "<group>"; };
+		CEDCBE8B1D11BE8F00440662 /* IEFAScheduleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFAScheduleTableViewCell.m; sourceTree = "<group>"; };
+		CEDCBE8D1D12BE0600440662 /* IEFARandomFactDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFARandomFactDB.h; sourceTree = "<group>"; };
+		CEDCBE8E1D12BE0600440662 /* IEFARandomFactDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFARandomFactDB.m; sourceTree = "<group>"; };
+		CEDCBE921D12CD6500440662 /* IEFAWeatherAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFAWeatherAPIManager.h; sourceTree = "<group>"; };
+		CEDCBE931D12CD6500440662 /* IEFAWeatherAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFAWeatherAPIManager.m; sourceTree = "<group>"; };
+		CEFCF3E01D074CEC0023D9BE /* IEFADailyScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFADailyScheduleViewController.h; sourceTree = "<group>"; };
+		CEFCF3E11D074CEC0023D9BE /* IEFADailyScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFADailyScheduleViewController.m; sourceTree = "<group>"; };
+		E691F9D1E8402F25B371D54D /* libPods-iefa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iefa.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78D44C441D05838000E14A7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC014C11D13D43E00B8DB52 /* QuartzCore.framework in Frameworks */,
+				CEC014BF1D13D43700B8DB52 /* Security.framework in Frameworks */,
+				CEC014BD1D13D42300B8DB52 /* DropboxSDK.framework in Frameworks */,
+				CE2B1C281D0C91BC006ED92E /* MapKit.framework in Frameworks */,
+				C97A00735850A3260A781784 /* libPods-iefa.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01298A249E45FA8AE8E7015F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19CB8B463A358837D0912411 /* Pods-iefa.debug.xcconfig */,
+				C47E562BCBB891791A36B28E /* Pods-iefa.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		78D44C3E1D05838000E14A7B = {
+			isa = PBXGroup;
+			children = (
+				78D44C491D05838000E14A7B /* iefa */,
+				78D44C481D05838000E14A7B /* Products */,
+				78D44C4A1D05838000E14A7B /* Supporting Files */,
+				CE35D4E01D1594CE00C742EF /* dictionary.pdf */,
+				CEC014C01D13D43E00B8DB52 /* QuartzCore.framework */,
+				CEC014BE1D13D43700B8DB52 /* Security.framework */,
+				CE2B1C271D0C91BC006ED92E /* MapKit.framework */,
+				CEC014BC1D13D42300B8DB52 /* DropboxSDK.framework */,
+				01298A249E45FA8AE8E7015F /* Pods */,
+				C5CBC140F452EED61CC5E8F2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		78D44C481D05838000E14A7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78D44C471D05838000E14A7B /* iefa.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78D44C491D05838000E14A7B /* iefa */ = {
+			isa = PBXGroup;
+			children = (
+				78D44C4D1D05838000E14A7B /* AppDelegate.h */,
+				78D44C4E1D05838000E14A7B /* AppDelegate.m */,
+				78D44C691D05F16300E14A7B /* IEFAConstants.h */,
+				A3324F1D1EE45BD000B0E361 /* Additions */,
+				CE35D4DF1D1572DF00C742EF /* Managers */,
+				CE01F77B1D07219300C61C6E /* ViewControllers */,
+				CEC014C21D13DC1800B8DB52 /* Main.storyboard */,
+				78D44C591D05838000E14A7B /* Assets.xcassets */,
+				78D44C5B1D05838000E14A7B /* LaunchScreen.storyboard */,
+				78D44C5E1D05838000E14A7B /* Info.plist */,
+				78D44C561D05838000E14A7B /* iefa.xcdatamodeld */,
+			);
+			path = iefa;
+			sourceTree = "<group>";
+		};
+		78D44C4A1D05838000E14A7B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE6D43B81D2441330001EB51 /* Reachability.h */,
+				CE6D43B91D2441330001EB51 /* Reachability.m */,
+				78721F041D2428F7009CC57E /* buttonWithCornerRadius.h */,
+				78721F051D2428F7009CC57E /* buttonWithCornerRadius.m */,
+				78D44C4B1D05838000E14A7B /* main.m */,
+			);
+			name = "Supporting Files";
+			path = iefa;
+			sourceTree = "<group>";
+		};
+		A09F9DC71D16D89400202086 /* RZTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				A09F9DC81D16D89400202086 /* Components */,
+				A09F9DCB1D16D89400202086 /* Data */,
+				A09F9DCF1D16D89400202086 /* Interactors */,
+				A09F9DDC1D16D89400202086 /* Managers */,
+				A09F9DDF1D16D89400202086 /* RZTransitions.h */,
+				A09F9DE01D16D89400202086 /* Transitions */,
+				A09F9DF31D16D89400202086 /* Utilities */,
+			);
+			name = RZTransitions;
+			path = ../RZTransitions;
+			sourceTree = "<group>";
+		};
+		A09F9DC81D16D89400202086 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A09F9DC91D16D89400202086 /* RZTransitionsNavigationController.h */,
+				A09F9DCA1D16D89400202086 /* RZTransitionsNavigationController.m */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A09F9DCB1D16D89400202086 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A09F9DCC1D16D89400202086 /* RZTransitionAction.h */,
+				A09F9DCD1D16D89400202086 /* RZUniqueTransition.h */,
+				A09F9DCE1D16D89400202086 /* RZUniqueTransition.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A09F9DCF1D16D89400202086 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				A09F9DD01D16D89400202086 /* RZBaseSwipeInteractionController.h */,
+				A09F9DD11D16D89400202086 /* RZBaseSwipeInteractionController.m */,
+				A09F9DD21D16D89400202086 /* RZHorizontalInteractionController.h */,
+				A09F9DD31D16D89400202086 /* RZHorizontalInteractionController.m */,
+				A09F9DD41D16D89400202086 /* RZOverscrollInteractionController.h */,
+				A09F9DD51D16D89400202086 /* RZOverscrollInteractionController.m */,
+				A09F9DD61D16D89400202086 /* RZPinchInteractionController.h */,
+				A09F9DD71D16D89400202086 /* RZPinchInteractionController.m */,
+				A09F9DD81D16D89400202086 /* RZTransitionInteractionControllerProtocol.h */,
+				A09F9DD91D16D89400202086 /* RZTransitionsInteractionControllers.h */,
+				A09F9DDA1D16D89400202086 /* RZVerticalSwipeInteractionController.h */,
+				A09F9DDB1D16D89400202086 /* RZVerticalSwipeInteractionController.m */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		A09F9DDC1D16D89400202086 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A09F9DDD1D16D89400202086 /* RZTransitionsManager.h */,
+				A09F9DDE1D16D89400202086 /* RZTransitionsManager.m */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A09F9DE01D16D89400202086 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				A09F9DE11D16D89400202086 /* RZAnimationControllerProtocol.h */,
+				A09F9DE21D16D89400202086 /* RZCardSlideAnimationController.h */,
+				A09F9DE31D16D89400202086 /* RZCardSlideAnimationController.m */,
+				A09F9DE41D16D89400202086 /* RZCirclePushAnimationController.h */,
+				A09F9DE51D16D89400202086 /* RZCirclePushAnimationController.m */,
+				A09F9DE61D16D89400202086 /* RZRectZoomAnimationController.h */,
+				A09F9DE71D16D89400202086 /* RZRectZoomAnimationController.m */,
+				A09F9DE81D16D89400202086 /* RZSegmentControlMoveFadeAnimationController.h */,
+				A09F9DE91D16D89400202086 /* RZSegmentControlMoveFadeAnimationController.m */,
+				A09F9DEA1D16D89400202086 /* RZShrinkZoomAnimationController.h */,
+				A09F9DEB1D16D89400202086 /* RZShrinkZoomAnimationController.m */,
+				A09F9DEC1D16D89400202086 /* RZTransitionsAnimationControllers.h */,
+				A09F9DED1D16D89400202086 /* RZZoomAlphaAnimationController.h */,
+				A09F9DEE1D16D89400202086 /* RZZoomAlphaAnimationController.m */,
+				A09F9DEF1D16D89400202086 /* RZZoomBlurAnimationController.h */,
+				A09F9DF01D16D89400202086 /* RZZoomBlurAnimationController.m */,
+				A09F9DF11D16D89400202086 /* RZZoomPushAnimationController.h */,
+				A09F9DF21D16D89400202086 /* RZZoomPushAnimationController.m */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		A09F9DF31D16D89400202086 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A09F9DF41D16D89400202086 /* NSObject+RZTransitionsViewHelpers.h */,
+				A09F9DF51D16D89400202086 /* NSObject+RZTransitionsViewHelpers.m */,
+				A09F9DF61D16D89400202086 /* UIImage+RZTransitionsFastImageBlur.h */,
+				A09F9DF71D16D89400202086 /* UIImage+RZTransitionsFastImageBlur.m */,
+				A09F9DF81D16D89400202086 /* UIImage+RZTransitionsSnapshotHelpers.h */,
+				A09F9DF91D16D89400202086 /* UIImage+RZTransitionsSnapshotHelpers.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A3324F181EE4597900B0E361 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				786D4ED21D0F110F00FB2ABF /* IEFAHomeViewController.h */,
+				786D4ED31D0F110F00FB2ABF /* IEFAHomeViewController.m */,
+			);
+			name = News;
+			sourceTree = "<group>";
+		};
+		A3324F191EE4598000B0E361 /* Committes */ = {
+			isa = PBXGroup;
+			children = (
+				78D44C641D05EE1B00E14A7B /* IEFACommitteesCollectionViewController.h */,
+				78D44C651D05EE1B00E14A7B /* IEFACommitteesCollectionViewController.m */,
+				786D4ECC1D0AD4DC00FB2ABF /* IEFACommitteViewController.h */,
+				786D4ECD1D0AD4DC00FB2ABF /* IEFACommitteViewController.m */,
+				786D4ED51D116CD900FB2ABF /* IEFATopicOverviewViewController.h */,
+				786D4ED61D116CD900FB2ABF /* IEFATopicOverviewViewController.m */,
+				A3324F1E1EE48C5500B0E361 /* IEFACommViewController.h */,
+				A3324F1F1EE48C5500B0E361 /* IEFACommViewController.m */,
+				A3A400FE1EE68EC0001963B1 /* IEFACommitteeTableViewCell.h */,
+				A3A400FF1EE68EC0001963B1 /* IEFACommitteeTableViewCell.m */,
+			);
+			name = Committes;
+			sourceTree = "<group>";
+		};
+		A3324F1A1EE4598900B0E361 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				CE01F7851D072DBE00C61C6E /* IEFAScheduleViewController.h */,
+				CE01F7861D072DBE00C61C6E /* IEFAScheduleViewController.m */,
+				CEFCF3E01D074CEC0023D9BE /* IEFADailyScheduleViewController.h */,
+				CEFCF3E11D074CEC0023D9BE /* IEFADailyScheduleViewController.m */,
+				CE2B1C241D0C45FE006ED92E /* IEFAEvantDayViewController.h */,
+				CE2B1C251D0C45FE006ED92E /* IEFAEvantDayViewController.m */,
+			);
+			name = Schedule;
+			sourceTree = "<group>";
+		};
+		A3324F1B1EE4599000B0E361 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				CE4387271D1FE9140006790F /* IEFAYoutubeViewController.h */,
+				CE4387281D1FE9140006790F /* IEFAYoutubeViewController.m */,
+				A37B74791EE6AFE100C13735 /* IEFAMediaViewController.h */,
+				A37B747A1EE6AFE100C13735 /* IEFAMediaViewController.m */,
+				786D4EE01D17EA1D00FB2ABF /* IEFAMediaTableViewController.h */,
+				786D4EE11D17EA1D00FB2ABF /* IEFAMediaTableViewController.m */,
+			);
+			name = Media;
+			sourceTree = "<group>";
+		};
+		A3324F1C1EE4599700B0E361 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				A049F8331D2468F100A8F249 /* IEFASponsorsTableViewController.h */,
+				A049F8341D2468F100A8F249 /* IEFASponsorsTableViewController.m */,
+				A049F8301D245A9700A8F249 /* IEFAAboutViewController.h */,
+				A049F8311D245A9700A8F249 /* IEFAAboutViewController.m */,
+				A37B74761EE6A86B00C13735 /* IEFAMoreViewController.h */,
+				A37B74771EE6A86B00C13735 /* IEFAMoreViewController.m */,
+				A0FEF1C71D08ACFB00710597 /* IEFADictionaryViewController.h */,
+				A0FEF1C81D08ACFB00710597 /* IEFADictionaryViewController.m */,
+				A0877BED1D22FFA60035C3D8 /* IEFAContactsTableViewController.h */,
+				A0877BEE1D22FFA60035C3D8 /* IEFAContactsTableViewController.m */,
+			);
+			name = More;
+			sourceTree = "<group>";
+		};
+		A3324F1D1EE45BD000B0E361 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				A09F9DC71D16D89400202086 /* RZTransitions */,
+			);
+			name = Additions;
+			sourceTree = "<group>";
+		};
+		C5CBC140F452EED61CC5E8F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E691F9D1E8402F25B371D54D /* libPods-iefa.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE01F77B1D07219300C61C6E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEDCBE911D12BE3E00440662 /* Cells */,
+				CEDCBE901D12BE1F00440662 /* Databases */,
+				A3324F181EE4597900B0E361 /* News */,
+				A3324F191EE4598000B0E361 /* Committes */,
+				A3324F1A1EE4598900B0E361 /* Schedule */,
+				A3324F1B1EE4599000B0E361 /* Media */,
+				A3324F1C1EE4599700B0E361 /* More */,
+				CE35D4EB1D15A59400C742EF /* IEFAEvantsViewController.h */,
+				CE35D4EC1D15A59400C742EF /* IEFAEvantsViewController.m */,
+				CE01F77C1D0721CB00C61C6E /* IEFAMainViewController.h */,
+				CE01F77D1D0721CB00C61C6E /* IEFAMainViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CE35D4DF1D1572DF00C742EF /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CEDCBE951D12D9DD00440662 /* WeatherAPIManager */,
+				CE35D4DC1D1572C900C742EF /* IEFADropBoxAccessTokenManager.h */,
+				CE35D4DD1D1572C900C742EF /* IEFADropBoxAccessTokenManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		CEDCBE901D12BE1F00440662 /* Databases */ = {
+			isa = PBXGroup;
+			children = (
+				CEDCBE8D1D12BE0600440662 /* IEFARandomFactDB.h */,
+				CEDCBE8E1D12BE0600440662 /* IEFARandomFactDB.m */,
+				786D4ECF1D0C167200FB2ABF /* IEFACommitteDB.h */,
+				786D4ED01D0C167200FB2ABF /* IEFACommitteDB.m */,
+				CE70A8641D075A5200BA6740 /* IEFASchedule.h */,
+				CE70A8651D075A5200BA6740 /* IEFASchedule.m */,
+			);
+			name = Databases;
+			sourceTree = "<group>";
+		};
+		CEDCBE911D12BE3E00440662 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				78D44C6A1D06CC2B00E14A7B /* IEFACommitteeCollectionViewCell.h */,
+				78D44C6B1D06CC2B00E14A7B /* IEFACommitteeCollectionViewCell.m */,
+				CE01F77F1D0727E700C61C6E /* IEFADailyScheduleTableViewCell.h */,
+				CE01F7801D0727E700C61C6E /* IEFADailyScheduleTableViewCell.m */,
+				CEDCBE8A1D11BE8F00440662 /* IEFAScheduleTableViewCell.h */,
+				CEDCBE8B1D11BE8F00440662 /* IEFAScheduleTableViewCell.m */,
+				786D4EE31D17ECE400FB2ABF /* IEFAMediaTableViewCell.h */,
+				786D4EE41D17ECE400FB2ABF /* IEFAMediaTableViewCell.m */,
+				CEBC33671D1A82460048E695 /* IEFAMediaActivityIndicatorTableViewCell.h */,
+				CEBC33681D1A82460048E695 /* IEFAMediaActivityIndicatorTableViewCell.m */,
+				CE43872A1D1FED240006790F /* IEFAMediaVideoTableViewCell.h */,
+				CE43872B1D1FED240006790F /* IEFAMediaVideoTableViewCell.m */,
+				A056DF851D251B3400053800 /* IEFAContactsHeaderView.h */,
+				A056DF861D251B3400053800 /* IEFAContactsHeaderView.m */,
+				A056DF881D251BC800053800 /* IEFAContactsHeaderView.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		CEDCBE951D12D9DD00440662 /* WeatherAPIManager */ = {
+			isa = PBXGroup;
+			children = (
+				CEDCBE921D12CD6500440662 /* IEFAWeatherAPIManager.h */,
+				CEDCBE931D12CD6500440662 /* IEFAWeatherAPIManager.m */,
+			);
+			name = WeatherAPIManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78D44C461D05838000E14A7B /* iefa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78D44C611D05838000E14A7B /* Build configuration list for PBXNativeTarget "iefa" */;
+			buildPhases = (
+				66D50F74326C9D552A65C664 /* [CP] Check Pods Manifest.lock */,
+				78D44C431D05838000E14A7B /* Sources */,
+				78D44C441D05838000E14A7B /* Frameworks */,
+				78D44C451D05838000E14A7B /* Resources */,
+				5622F592278A45A71454C614 /* [CP] Embed Pods Frameworks */,
+				9E124C44266956D3FB24DFC0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iefa;
+			productName = iefa;
+			productReference = 78D44C471D05838000E14A7B /* iefa.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78D44C3F1D05838000E14A7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IEFA;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Paruyr Danielian";
+				TargetAttributes = {
+					78D44C461D05838000E14A7B = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = QHK274E4ZF;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 78D44C421D05838000E14A7B /* Build configuration list for PBXProject "iefa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78D44C3E1D05838000E14A7B;
+			productRefGroup = 78D44C481D05838000E14A7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78D44C461D05838000E14A7B /* iefa */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78D44C451D05838000E14A7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE35D4E11D1594CE00C742EF /* dictionary.pdf in Resources */,
+				78D44C5D1D05838000E14A7B /* LaunchScreen.storyboard in Resources */,
+				78D44C5A1D05838000E14A7B /* Assets.xcassets in Resources */,
+				A056DF891D251BC800053800 /* IEFAContactsHeaderView.xib in Resources */,
+				CEC014C41D13DC1800B8DB52 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5622F592278A45A71454C614 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iefa/Pods-iefa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66D50F74326C9D552A65C664 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9E124C44266956D3FB24DFC0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iefa/Pods-iefa-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78D44C431D05838000E14A7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				786D4ED41D0F110F00FB2ABF /* IEFAHomeViewController.m in Sources */,
+				A09F9E0A1D16D89400202086 /* NSObject+RZTransitionsViewHelpers.m in Sources */,
+				A09F9E051D16D89400202086 /* RZSegmentControlMoveFadeAnimationController.m in Sources */,
+				A09F9DFE1D16D89400202086 /* RZOverscrollInteractionController.m in Sources */,
+				786D4ECE1D0AD4DC00FB2ABF /* IEFACommitteViewController.m in Sources */,
+				A09F9E061D16D89400202086 /* RZShrinkZoomAnimationController.m in Sources */,
+				A09F9E001D16D89400202086 /* RZVerticalSwipeInteractionController.m in Sources */,
+				786D4ED71D116CD900FB2ABF /* IEFATopicOverviewViewController.m in Sources */,
+				786D4ED11D0C167200FB2ABF /* IEFACommitteDB.m in Sources */,
+				CE35D4DE1D1572C900C742EF /* IEFADropBoxAccessTokenManager.m in Sources */,
+				CE6D43BA1D2441330001EB51 /* Reachability.m in Sources */,
+				CEDCBE8C1D11BE8F00440662 /* IEFAScheduleTableViewCell.m in Sources */,
+				A09F9E081D16D89400202086 /* RZZoomBlurAnimationController.m in Sources */,
+				CE35D4ED1D15A59400C742EF /* IEFAEvantsViewController.m in Sources */,
+				CE01F7871D072DBE00C61C6E /* IEFAScheduleViewController.m in Sources */,
+				A09F9E0C1D16D89400202086 /* UIImage+RZTransitionsSnapshotHelpers.m in Sources */,
+				CE4387291D1FE9140006790F /* IEFAYoutubeViewController.m in Sources */,
+				78D44C6C1D06CC2B00E14A7B /* IEFACommitteeCollectionViewCell.m in Sources */,
+				A3A401001EE68EC0001963B1 /* IEFACommitteeTableViewCell.m in Sources */,
+				786D4EE51D17ECE400FB2ABF /* IEFAMediaTableViewCell.m in Sources */,
+				CEBC33691D1A82460048E695 /* IEFAMediaActivityIndicatorTableViewCell.m in Sources */,
+				A0FEF1C91D08ACFB00710597 /* IEFADictionaryViewController.m in Sources */,
+				A37B747B1EE6AFE100C13735 /* IEFAMediaViewController.m in Sources */,
+				A09F9E021D16D89400202086 /* RZCardSlideAnimationController.m in Sources */,
+				A09F9E071D16D89400202086 /* RZZoomAlphaAnimationController.m in Sources */,
+				CE01F7811D0727E700C61C6E /* IEFADailyScheduleTableViewCell.m in Sources */,
+				A09F9E091D16D89400202086 /* RZZoomPushAnimationController.m in Sources */,
+				CEDCBE8F1D12BE0600440662 /* IEFARandomFactDB.m in Sources */,
+				A3324F201EE48C5500B0E361 /* IEFACommViewController.m in Sources */,
+				786D4EE21D17EA1D00FB2ABF /* IEFAMediaTableViewController.m in Sources */,
+				CEFCF3E21D074CEC0023D9BE /* IEFADailyScheduleViewController.m in Sources */,
+				A09F9E041D16D89400202086 /* RZRectZoomAnimationController.m in Sources */,
+				78D44C4F1D05838000E14A7B /* AppDelegate.m in Sources */,
+				A09F9E011D16D89400202086 /* RZTransitionsManager.m in Sources */,
+				A09F9DFD1D16D89400202086 /* RZHorizontalInteractionController.m in Sources */,
+				78D44C661D05EE1B00E14A7B /* IEFACommitteesCollectionViewController.m in Sources */,
+				CE43872C1D1FED240006790F /* IEFAMediaVideoTableViewCell.m in Sources */,
+				A0877BEF1D22FFA60035C3D8 /* IEFAContactsTableViewController.m in Sources */,
+				CE2B1C261D0C45FE006ED92E /* IEFAEvantDayViewController.m in Sources */,
+				78D44C581D05838000E14A7B /* iefa.xcdatamodeld in Sources */,
+				A37B74781EE6A86B00C13735 /* IEFAMoreViewController.m in Sources */,
+				A049F8351D2468F100A8F249 /* IEFASponsorsTableViewController.m in Sources */,
+				CEDCBE941D12CD6500440662 /* IEFAWeatherAPIManager.m in Sources */,
+				A09F9E0B1D16D89400202086 /* UIImage+RZTransitionsFastImageBlur.m in Sources */,
+				A09F9DFB1D16D89400202086 /* RZUniqueTransition.m in Sources */,
+				A09F9DFC1D16D89400202086 /* RZBaseSwipeInteractionController.m in Sources */,
+				CE70A8661D075A5200BA6740 /* IEFASchedule.m in Sources */,
+				A049F8321D245A9700A8F249 /* IEFAAboutViewController.m in Sources */,
+				A09F9DFA1D16D89400202086 /* RZTransitionsNavigationController.m in Sources */,
+				78721F061D2428F7009CC57E /* buttonWithCornerRadius.m in Sources */,
+				A09F9E031D16D89400202086 /* RZCirclePushAnimationController.m in Sources */,
+				CE01F77E1D0721CB00C61C6E /* IEFAMainViewController.m in Sources */,
+				A09F9DFF1D16D89400202086 /* RZPinchInteractionController.m in Sources */,
+				78D44C4C1D05838000E14A7B /* main.m in Sources */,
+				A056DF871D251B3400053800 /* IEFAContactsHeaderView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		78D44C5B1D05838000E14A7B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78D44C5C1D05838000E14A7B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CEC014C21D13DC1800B8DB52 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEC014C31D13DC1800B8DB52 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		78D44C5F1D05838000E14A7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78D44C601D05838000E14A7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78D44C621D05838000E14A7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19CB8B463A358837D0912411 /* Pods-iefa.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = QHK274E4ZF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = iefa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.eyparmenia.IEFA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78D44C631D05838000E14A7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C47E562BCBB891791A36B28E /* Pods-iefa.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = QHK274E4ZF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = iefa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.eyparmenia.IEFA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78D44C421D05838000E14A7B /* Build configuration list for PBXProject "iefa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78D44C5F1D05838000E14A7B /* Debug */,
+				78D44C601D05838000E14A7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78D44C611D05838000E14A7B /* Build configuration list for PBXNativeTarget "iefa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78D44C621D05838000E14A7B /* Debug */,
+				78D44C631D05838000E14A7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		78D44C561D05838000E14A7B /* iefa.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				78D44C571D05838000E14A7B /* iefa.xcdatamodel */,
+			);
+			currentVersion = 78D44C571D05838000E14A7B /* iefa.xcdatamodel */;
+			path = iefa.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 78D44C3F1D05838000E14A7B /* Project object */;
+}
