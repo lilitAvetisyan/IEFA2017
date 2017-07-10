@@ -12,7 +12,10 @@
 @interface IEFAMediaViewController ()<UITextViewDelegate>
 {
     
-    IBOutlet UIView *iefaTextView;
+//    IBOutlet UIView *iefaTextView;
+    
+    
+    IBOutlet UILabel *lblMedia;
 }
 
 @end
@@ -20,26 +23,11 @@
 @implementation IEFAMediaViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBar.hidden = YES;
-    CGRect textViewFrame = CGRectMake(iefaTextView.frame.origin.x, iefaTextView.frame.origin.y, iefaTextView.frame.size.width, iefaTextView.frame.size.height);
-    UITextView *textView = [[UITextView alloc] initWithFrame:textViewFrame];
-    textView.returnKeyType = UIReturnKeyDone;
-    textView.delegate = self;
-    iefaTextView.backgroundColor = [UIColor whiteColor];
-    //textView.backgroundColor = iefaTextView.backgroundColor;
-    [iefaTextView addSubview:textView];
-    
-    [textView setText:@"/n a /n very /n very /n very /n long /n text /n with /n several /n maybe more /n paragrapahs"];
-    textView.text =@"/n a /n very /n very /n very /n long /n text /n with /n several /n maybe more /n paragrapahs";
-//    textView.textColor = [UIColor whiteColor];
-    // Do any additional setup after loading the view.
 }
 -(void)viewWillAppear:(BOOL)animated{
     
-    self.navigationController.navigationBar.hidden = YES;    
-}
--(void)viewWillDisappear:(BOOL)animated{
-    self.navigationController.navigationBar.hidden = NO;
+//    self.navigationController.navigationBar.hidden = YES;
+    lblMedia.text = @"He determined to drop his litigation with the monastry, and relinguish his claims to the wood-cuting and fishery rihgts at once. He was the more ready to do this becuase the rights had becom much less valuable, and he had indeed the vaguest idea where the wood and river in quedtion were. These excellant intentions were strengthed when he enterd the Father Superior's diniing-room, though, stricttly speakin, it was not a dining-room, for the Father Superior had only two rooms alltogether; they were, however, much larger and more comfortable than Father Zossima's. But tehre was was no great luxury about the furnishng of these rooms eithar. The furniture was of mohogany, covered with leather, in the old-fashionned style of 1820 the floor was He determined to drop his litigation with the monastry, and relinguish his claims to the wood-cuting and fishery rihgts at once. He was the more ready to do this becuase the rights had becom much less valuable, and he had indeed the vaguest idea where the wood and river in quedtion were. These excellant intentions were strengthed when he enterd the Father Superior's diniing-room, though, stricttly speakin, it was not a dining-room, for the Father Superior had only two rooms alltogether; they were, however, much larger and more comfortable than Father Zossima's. But tehre was was no great luxury about the furnishng of these rooms eithar. The furniture was of mohogany, covered with leather, in the old-fashionned style of 1820 the floor was";
 }
 
 -(IBAction)playVideo:(id)sender{

@@ -14,7 +14,7 @@
 #import "IEFAWeatherAPIManager.h"
 #import <DropboxSDK/DropboxSDK.h>
 
-@interface IEFAHomeViewController () <DBRestClientDelegate>
+@interface IEFAHomeViewController () <DBRestClientDelegate, UIScrollViewDelegate>
 @property (strong, nonatomic) IBOutlet UIScrollView *scrlviewNews;
 @property (strong, nonatomic) IEFADropBoxAccessTokenManager *tokenManager;
 @property (strong, nonatomic) DBRestClient *restClient;
@@ -31,7 +31,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    self.scrlviewNews.contentSize = CGSizeMake(self.view.frame.size.width, 2000);
+    _scrlviewNews.delegate = self;
+    
     if ([[NSUserDefaults standardUserDefaults] boolForKey:kFileNameResolutionBooklet]) {
         [self resolutionBooklet];
     } else {
@@ -44,27 +45,12 @@
         self.restClient.delegate = self;
         [self.restClient loadMetadata:@"/"];
     }
-    _newsLabel.text = @"He determined to drop his litigation with the monastry, and relinguish his claims to the wood-cuting and fishery rihgts at once. He was the more ready to do this becuase the rights had becom much less valuable, and he had indeed the vaguest idea where the wood and river in quedtion were. These excellant intentions were strengthed when he enterd the Father Superior's diniing-room, though, stricttly speakin, it was not a dining-room, for the Father Superior had only two rooms alltogether; they were, however, much larger and more comfortable than Father Zossima's. But tehre was was no great luxury about the furnishng of these rooms eithar. The furniture was of mohogany, covered with leather, in the old-fashionned style of 1820 the floor was ";
+    _newsLabel.text = @"He determined to drop his litigation with the monastry, and relinguish his claims to the wood-cuting and fishery rihgts at once. He was the more ready to do this becuase the rights had becom much less valuable, and he had indeed the vaguest idea where the wood and river in quedtion were. These excellant intentions were strengthed when he enterd the Father Superior's diniing-room, though, stricttly speakin, it was not a dining-room, for the Father Superior had only two rooms alltogether; they were, however, much larger and more comfortable than Father Zossima's. But tehre was was no great luxury about the furnishng of these rooms eithar. The furniture was of mohogany, covered with leather, in the old-fashionned style of 1820 the floor was He determined to drop his litigation with the monastry, and relinguish his claims to the wood-cuting and fishery rihgts at once. He was the more ready to do this becuase the rights had becom much less valuable, and he had indeed the vaguest idea where the wood and river in quedtion were. These excellant intentions were strengthed when he enterd the Father Superior's diniing-room, though, stricttly speakin, it was not a dining-room, for the Father Superior had only two rooms alltogether; they were, however, much larger and more comfortable than Father Zossima's. But tehre was was no great luxury about the furnishng of these rooms eithar. The furniture was of mohogany, covered with leather, in the old-fashionned style of 1820 the floor was ";
     
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    [self.navigationController setNavigationBarHidden:YES];
     [super viewWillAppear:animated];
-    
-//    [[IEFAWeatherAPIManager sharedManager] getWeatherComplitionHandler:^(NSString *temp, NSString *weather) {
-//    }];
-    //    [[NSUserDefaults standardUserDefaults] removeObjectForKey:kFileNameResolutionBooklet];
-    
-    
-    
-//    NSDictionary *randomFact = [[IEFARandomFactDB randomFacts] objectAtIndex:arc4random_uniform(20)];
-//    [self.randomFactImageView setImage:[UIImage imageNamed:randomFact[@"image"]]];
-//    self.randomFactTitle1Label.text = randomFact[@"title"];
-//    self.randomFactAbout1Label.text = randomFact[@"about"];
-//    [self.resolutionBookletButton.titleLabel setTextAlignment:NSTextAlignmentCenter];
-//    [self.resolutionBookletButton.titleLabel setNumberOfLines:0];
-//    [self.resolutionBookletButton.currentImage alignmentRectInsets];
 }
 
 - (IBAction)resolutionBookletAction:(id)sender {
