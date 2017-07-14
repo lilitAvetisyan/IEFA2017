@@ -26,10 +26,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSDictionary *size = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"Arial" size:25.0],NSFontAttributeName, nil];
+    
+    self.navigationController.navigationBar.titleTextAttributes = size;
     committees = @[@"AFCO", @"ECON", @"AFET", @"PECH", @"JURI", @"SEDE", @"DROI", @"DEVE", @"LIBE", @"ENVI"];
     carouselComm.delegate = self;
     carouselComm.dataSource = self;
-    carouselComm.type = iCarouselTypeCoverFlow2;
+//    carouselComm.type = iCarouselTypeCoverFlow2;
     
     [self loadCommittees];
 
@@ -41,7 +44,7 @@
 }
 
 -(void)loadCommittees{
-    carouselComm.type = iCarouselTypeRotary;
+    carouselComm.type = iCarouselTypeCylinder;
     [carouselComm reloadData];
 
 }
@@ -93,7 +96,7 @@
         //no button available to recycle, so create new one
         UIImage *image = [UIImage imageNamed:@"commBackground"];
         button = [UIButton buttonWithType:UIButtonTypeCustom];
-        button.frame = CGRectMake(0.0f, 0.0f, 100.0f, 70.0f);
+        button.frame = CGRectMake(0.0f, 0.0f, 155.0f, 90.0f);
         [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [button setBackgroundImage:image forState:UIControlStateNormal];
         button.titleLabel.font = [button.titleLabel.font fontWithSize:20];
@@ -144,7 +147,12 @@
             
     }
     
-    chairName.text = [committeInfo objectForKey:@"NameSurname"];
+    NSString* chair = [NSString stringWithFormat:@"%@ \n%@", [committeInfo objectForKey:@"ChairImage"],[committeInfo objectForKey:@"NameSurname"]];
+    chairName.lineBreakMode = NSLineBreakByWordWrapping;
+    chairName.numberOfLines = 0;
+    chairName.text = chair;
+    //    NSLog(chairName.text);
+    ;
     commInfo.text = [committeInfo objectForKey:@"CommitteTopic"];
     
 //    self.committeTopicLabel.text = [committeInfo objectForKey:@"CommitteTopic"];

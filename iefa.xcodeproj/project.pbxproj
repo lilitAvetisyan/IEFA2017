@@ -58,7 +58,6 @@
 		CE2B1C281D0C91BC006ED92E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2B1C271D0C91BC006ED92E /* MapKit.framework */; };
 		CE35D4DE1D1572C900C742EF /* IEFADropBoxAccessTokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35D4DD1D1572C900C742EF /* IEFADropBoxAccessTokenManager.m */; };
 		CE35D4E11D1594CE00C742EF /* dictionary.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CE35D4E01D1594CE00C742EF /* dictionary.pdf */; };
-		CE35D4ED1D15A59400C742EF /* IEFAEvantsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35D4EC1D15A59400C742EF /* IEFAEvantsViewController.m */; };
 		CE4387291D1FE9140006790F /* IEFAYoutubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4387281D1FE9140006790F /* IEFAYoutubeViewController.m */; };
 		CE43872C1D1FED240006790F /* IEFAMediaVideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE43872B1D1FED240006790F /* IEFAMediaVideoTableViewCell.m */; };
 		CE6D43BA1D2441330001EB51 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6D43B91D2441330001EB51 /* Reachability.m */; };
@@ -179,8 +178,6 @@
 		CE35D4DC1D1572C900C742EF /* IEFADropBoxAccessTokenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFADropBoxAccessTokenManager.h; sourceTree = "<group>"; };
 		CE35D4DD1D1572C900C742EF /* IEFADropBoxAccessTokenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFADropBoxAccessTokenManager.m; sourceTree = "<group>"; };
 		CE35D4E01D1594CE00C742EF /* dictionary.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = dictionary.pdf; sourceTree = "<group>"; };
-		CE35D4EB1D15A59400C742EF /* IEFAEvantsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFAEvantsViewController.h; sourceTree = "<group>"; };
-		CE35D4EC1D15A59400C742EF /* IEFAEvantsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFAEvantsViewController.m; sourceTree = "<group>"; };
 		CE4387271D1FE9140006790F /* IEFAYoutubeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFAYoutubeViewController.h; sourceTree = "<group>"; };
 		CE4387281D1FE9140006790F /* IEFAYoutubeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFAYoutubeViewController.m; sourceTree = "<group>"; };
 		CE43872A1D1FED240006790F /* IEFAMediaVideoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFAMediaVideoTableViewCell.h; sourceTree = "<group>"; };
@@ -481,8 +478,6 @@
 				A3324F1A1EE4598900B0E361 /* Agenda */,
 				A3324F1B1EE4599000B0E361 /* Media */,
 				A3324F1C1EE4599700B0E361 /* More */,
-				CE35D4EB1D15A59400C742EF /* IEFAEvantsViewController.h */,
-				CE35D4EC1D15A59400C742EF /* IEFAEvantsViewController.m */,
 				CE01F77C1D0721CB00C61C6E /* IEFAMainViewController.h */,
 				CE01F77D1D0721CB00C61C6E /* IEFAMainViewController.m */,
 			);
@@ -682,7 +677,6 @@
 				CE6D43BA1D2441330001EB51 /* Reachability.m in Sources */,
 				CEDCBE8C1D11BE8F00440662 /* IEFAScheduleTableViewCell.m in Sources */,
 				A09F9E081D16D89400202086 /* RZZoomBlurAnimationController.m in Sources */,
-				CE35D4ED1D15A59400C742EF /* IEFAEvantsViewController.m in Sources */,
 				CE01F7871D072DBE00C61C6E /* IEFAScheduleViewController.m in Sources */,
 				A09F9E0C1D16D89400202086 /* UIImage+RZTransitionsSnapshotHelpers.m in Sources */,
 				CE4387291D1FE9140006790F /* IEFAYoutubeViewController.m in Sources */,

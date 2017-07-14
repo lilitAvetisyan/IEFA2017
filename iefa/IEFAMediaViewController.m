@@ -23,6 +23,9 @@
 @implementation IEFAMediaViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSDictionary *size = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"Arial" size:25.0],NSFontAttributeName, nil];
+    
+    self.navigationController.navigationBar.titleTextAttributes = size;
 }
 -(void)viewWillAppear:(BOOL)animated{
     
