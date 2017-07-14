@@ -1,0 +1,1 @@
+../../../../Inapptics/Inapptics.framework/Headers/Inapptics.h

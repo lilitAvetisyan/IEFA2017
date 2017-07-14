@@ -46,10 +46,10 @@
 		A09F9E0B1D16D89400202086 /* UIImage+RZTransitionsFastImageBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = A09F9DF71D16D89400202086 /* UIImage+RZTransitionsFastImageBlur.m */; };
 		A09F9E0C1D16D89400202086 /* UIImage+RZTransitionsSnapshotHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = A09F9DF91D16D89400202086 /* UIImage+RZTransitionsSnapshotHelpers.m */; };
 		A0FEF1C91D08ACFB00710597 /* IEFADictionaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FEF1C81D08ACFB00710597 /* IEFADictionaryViewController.m */; };
+		A32787371F17AD4200567269 /* IEFAAgendaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A32787361F17AD4200567269 /* IEFAAgendaViewController.m */; };
 		A3324F201EE48C5500B0E361 /* IEFACommViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3324F1F1EE48C5500B0E361 /* IEFACommViewController.m */; };
 		A37B74781EE6A86B00C13735 /* IEFAMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A37B74771EE6A86B00C13735 /* IEFAMoreViewController.m */; };
 		A37B747B1EE6AFE100C13735 /* IEFAMediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A37B747A1EE6AFE100C13735 /* IEFAMediaViewController.m */; };
-		A3A401001EE68EC0001963B1 /* IEFACommitteeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A400FF1EE68EC0001963B1 /* IEFACommitteeTableViewCell.m */; };
 		C97A00735850A3260A781784 /* libPods-iefa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E691F9D1E8402F25B371D54D /* libPods-iefa.a */; };
 		CE01F77E1D0721CB00C61C6E /* IEFAMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE01F77D1D0721CB00C61C6E /* IEFAMainViewController.m */; };
 		CE01F7811D0727E700C61C6E /* IEFADailyScheduleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE01F7801D0727E700C61C6E /* IEFADailyScheduleTableViewCell.m */; };
@@ -158,14 +158,14 @@
 		A09F9DF91D16D89400202086 /* UIImage+RZTransitionsSnapshotHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RZTransitionsSnapshotHelpers.m"; sourceTree = "<group>"; };
 		A0FEF1C71D08ACFB00710597 /* IEFADictionaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFADictionaryViewController.h; sourceTree = "<group>"; };
 		A0FEF1C81D08ACFB00710597 /* IEFADictionaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFADictionaryViewController.m; sourceTree = "<group>"; };
+		A32787351F17AD4200567269 /* IEFAAgendaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFAAgendaViewController.h; sourceTree = "<group>"; };
+		A32787361F17AD4200567269 /* IEFAAgendaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFAAgendaViewController.m; sourceTree = "<group>"; };
 		A3324F1E1EE48C5500B0E361 /* IEFACommViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFACommViewController.h; sourceTree = "<group>"; };
 		A3324F1F1EE48C5500B0E361 /* IEFACommViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFACommViewController.m; sourceTree = "<group>"; };
 		A37B74761EE6A86B00C13735 /* IEFAMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFAMoreViewController.h; sourceTree = "<group>"; };
 		A37B74771EE6A86B00C13735 /* IEFAMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFAMoreViewController.m; sourceTree = "<group>"; };
 		A37B74791EE6AFE100C13735 /* IEFAMediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFAMediaViewController.h; sourceTree = "<group>"; };
 		A37B747A1EE6AFE100C13735 /* IEFAMediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFAMediaViewController.m; sourceTree = "<group>"; };
-		A3A400FE1EE68EC0001963B1 /* IEFACommitteeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFACommitteeTableViewCell.h; sourceTree = "<group>"; };
-		A3A400FF1EE68EC0001963B1 /* IEFACommitteeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFACommitteeTableViewCell.m; sourceTree = "<group>"; };
 		C47E562BCBB891791A36B28E /* Pods-iefa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iefa.release.xcconfig"; path = "Pods/Target Support Files/Pods-iefa/Pods-iefa.release.xcconfig"; sourceTree = "<group>"; };
 		CE01F77C1D0721CB00C61C6E /* IEFAMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEFAMainViewController.h; sourceTree = "<group>"; };
 		CE01F77D1D0721CB00C61C6E /* IEFAMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEFAMainViewController.m; sourceTree = "<group>"; };
@@ -406,13 +406,11 @@
 				786D4ED61D116CD900FB2ABF /* IEFATopicOverviewViewController.m */,
 				A3324F1E1EE48C5500B0E361 /* IEFACommViewController.h */,
 				A3324F1F1EE48C5500B0E361 /* IEFACommViewController.m */,
-				A3A400FE1EE68EC0001963B1 /* IEFACommitteeTableViewCell.h */,
-				A3A400FF1EE68EC0001963B1 /* IEFACommitteeTableViewCell.m */,
 			);
 			name = Committes;
 			sourceTree = "<group>";
 		};
-		A3324F1A1EE4598900B0E361 /* Schedule */ = {
+		A3324F1A1EE4598900B0E361 /* Agenda */ = {
 			isa = PBXGroup;
 			children = (
 				CE01F7851D072DBE00C61C6E /* IEFAScheduleViewController.h */,
@@ -421,8 +419,10 @@
 				CEFCF3E11D074CEC0023D9BE /* IEFADailyScheduleViewController.m */,
 				CE2B1C241D0C45FE006ED92E /* IEFAEvantDayViewController.h */,
 				CE2B1C251D0C45FE006ED92E /* IEFAEvantDayViewController.m */,
+				A32787351F17AD4200567269 /* IEFAAgendaViewController.h */,
+				A32787361F17AD4200567269 /* IEFAAgendaViewController.m */,
 			);
-			name = Schedule;
+			name = Agenda;
 			sourceTree = "<group>";
 		};
 		A3324F1B1EE4599000B0E361 /* Media */ = {
@@ -478,7 +478,7 @@
 				CEDCBE901D12BE1F00440662 /* Databases */,
 				A3324F181EE4597900B0E361 /* News */,
 				A3324F191EE4598000B0E361 /* Committes */,
-				A3324F1A1EE4598900B0E361 /* Schedule */,
+				A3324F1A1EE4598900B0E361 /* Agenda */,
 				A3324F1B1EE4599000B0E361 /* Media */,
 				A3324F1C1EE4599700B0E361 /* More */,
 				CE35D4EB1D15A59400C742EF /* IEFAEvantsViewController.h */,
@@ -687,7 +687,6 @@
 				A09F9E0C1D16D89400202086 /* UIImage+RZTransitionsSnapshotHelpers.m in Sources */,
 				CE4387291D1FE9140006790F /* IEFAYoutubeViewController.m in Sources */,
 				78D44C6C1D06CC2B00E14A7B /* IEFACommitteeCollectionViewCell.m in Sources */,
-				A3A401001EE68EC0001963B1 /* IEFACommitteeTableViewCell.m in Sources */,
 				786D4EE51D17ECE400FB2ABF /* IEFAMediaTableViewCell.m in Sources */,
 				CEBC33691D1A82460048E695 /* IEFAMediaActivityIndicatorTableViewCell.m in Sources */,
 				A0FEF1C91D08ACFB00710597 /* IEFADictionaryViewController.m in Sources */,
@@ -708,6 +707,7 @@
 				CE43872C1D1FED240006790F /* IEFAMediaVideoTableViewCell.m in Sources */,
 				A0877BEF1D22FFA60035C3D8 /* IEFAContactsTableViewController.m in Sources */,
 				CE2B1C261D0C45FE006ED92E /* IEFAEvantDayViewController.m in Sources */,
+				A32787371F17AD4200567269 /* IEFAAgendaViewController.m in Sources */,
 				78D44C581D05838000E14A7B /* iefa.xcdatamodeld in Sources */,
 				A37B74781EE6A86B00C13735 /* IEFAMoreViewController.m in Sources */,
 				A049F8351D2468F100A8F249 /* IEFASponsorsTableViewController.m in Sources */,

@@ -1,6 +1,14 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+## Inapptics
+
+Inapptics License
+
+Copyright (c) 2017 Inapptics Inc.
+
+Detailed content at http://inapptics.com/terms-of-use.html
+
 ## XCDYouTubeKit
 
 The MIT License (MIT)

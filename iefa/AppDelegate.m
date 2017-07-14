@@ -9,13 +9,14 @@
 #import "AppDelegate.h"
 #import "IEFAConstants.h"
 #import "IEFAWeatherAPIManager.h"
+@import Inapptics;
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
+// 3H9R4WkGqq1B0wZTmWLPi6Tz7FEZM7774wIC73NY
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
  
@@ -29,6 +30,7 @@
     [[UINavigationBar appearance] setTranslucent:NO];
     [[UINavigationBar appearance] setBarTintColor:[UIColor blackColor]];
     */
+    [Inapptics letsGoWithAppToken:@"3H9R4WkGqq1B0wZTmWLPi6Tz7FEZM7774wIC73NY"];
     return YES;
 }
 

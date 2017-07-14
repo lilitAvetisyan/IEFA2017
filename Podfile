@@ -7,5 +7,6 @@ target 'iefa' do
 pod "youtube-ios-player-helper", "~> 0.1.4"
 pod 'iCarousel'
 pod 'XCDYouTubeKit'
+pod 'Inapptics'
 
 end
